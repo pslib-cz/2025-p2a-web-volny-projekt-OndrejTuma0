@@ -1,0 +1,10 @@
+html {
+    --black: #22222;
+    --gray: #3C3C3C;
+    --white: #F8F8F8;
+    --red: #FF5A5F;
+    --purple: #904ED3;
+
+    background-color: var(--black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
