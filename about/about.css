@@ -1,0 +1,12 @@
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    margin: 20px;
+}
+
+.aboutus > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
