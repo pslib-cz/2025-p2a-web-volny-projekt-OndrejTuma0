@@ -23,6 +23,12 @@
                     <div class="line"></div>
                 </div>
             </button>
+            <div class="navdesktop">
+                <a href="../index.html">Hlavní stránka</a>
+                <a href="about.html">O nás</a>
+                <a href="../contact/contact.html">Kontakty</a>
+                <a href="../index.html#products" class="button" style="padding: 5px 10px">Produkty</a>
+            </div>
         </div>
         <div class="navhamburger">
             <a href="../index.html">Hlavní stránka</a>
@@ -32,21 +38,23 @@
         </div>
     </nav>
     
-    <section class="hero">
+    <section class="hero container">
         <div class="hero__header">
             <h1 class="header">O <span class="red">nás</span></h1>
         </div>
     </section>
 
-    <section class="aboutus">
+    <section class="aboutus container">
         <p><span class="red">Modulab</span> vznikl z jednoduché myšlenky: zvuk by měl být tvůj. Ne přednastavenej, ne kompromisní — <span class="red">tvůj</span>.</p>
-        <div>
+        <div class="aboutus__figure">
             <img src="../img/about/studio.png" alt="Studio">
             <p>Jsme parta hudebníků a inženýrů z Liberce. Tvoříme od roku 2019.</p>
         </div>
-        <div>
+        <div class="aboutus__figure-reversed">
             <img src="../img/about/mixing.png" alt="Mixing">
-            <p>Navrhujeme syntezátory pro lidi, kteří berou zvuk vážně. Každý přístroj vyrábíme ručně v malé sérii, s důrazem na <span class="red">kvalitu</span> analogových obvodů a intuitivní ovládání. Žádné zbytečné menu, žádné schované parametry — <span class="red">jen přímý přístup ke zvuku</span>.</p>
+            <div>
+                <p>Navrhujeme syntezátory pro lidi, kteří berou zvuk vážně. Každý přístroj vyrábíme ručně v malé sérii, s důrazem na <span class="red">kvalitu</span> analogových obvodů a intuitivní ovládání. Žádné zbytečné menu, žádné schované parametry — <span class="red">jen přímý přístup ke zvuku</span>.</p>
+            </div>
         </div>
     </section>
 
@@ -88,9 +96,11 @@
                     <li><a href="../index.html"><img src="../img/logoDark.png" alt="logoDark"></a></li>
                 </ul>
             </div>
+            <img src="../img/waveDesign.png" alt="waveDesign" class="footer__design">
         </div>
     </footer>
 
     <script src="../script.js"></script>
+    <script src="about.js"></script>
 </body>
 </html>

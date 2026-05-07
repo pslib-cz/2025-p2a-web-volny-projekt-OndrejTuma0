@@ -21,6 +21,7 @@ html {
 body {
     padding-top: 60px;
     margin: 0;
+    position: relative;
 }
 
 p {
@@ -43,6 +44,7 @@ h1 {
 }
 
 h2 {
+    margin: 0;
     font-size: 24px;
     font-weight: var(--medium);
 }
@@ -63,6 +65,16 @@ button {
 
 .bold {
     font-weight: var(--semibold);
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.bgdesign {
+    position: absolute;
+    bottom: 30%;
+    z-index: -67;
 }
 
 /* NAVBAR */
@@ -97,6 +109,10 @@ button {
     align-items: start;
 }
 
+.navdesktop {
+    display: none;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -127,8 +143,8 @@ button {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin: 30px 0;
     padding: 20px;
-    margin-bottom: 30px;
 }
 
 .hero__header {
@@ -154,8 +170,40 @@ button {
     flex-direction: column;
     background-color: var(--red);
     gap: 30px;
-    padding: 20px;
     align-items: center;
+    position: relative;
+    margin: 8em 0;
+    padding: 20px;
+}
+
+.products__products {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.products__title {
+    font-size: 32px;
+    font-weight: var(--semibold);
+    align-self: start;
+}
+
+.products__designtop {
+    position: absolute;
+    width: 100%;
+    height: 82px;
+    top: -72px;
+    left: 0;
+}
+
+.products__designbottom {
+    position: absolute;
+    bottom: -72px;
+    height: 82px;
+    left: 0;
+    width: 100%;
+    transform: rotate(180deg)
 }
 
 /* PRODUCT CARD */
@@ -163,7 +211,7 @@ button {
     background-color: var(--black);
     border-radius: 4px;
     padding: 10px 15px;
-    width: 353px;
+    width: stretch;
     height: 187px;
     position: relative;
     box-shadow: 2px 4px 5px #00000077;
@@ -204,6 +252,8 @@ button {
     justify-content: space-between;
     height: stretch;
     width: 131px;
+    z-index: 21;
+    position: relative;
 }
 
 .productcard__header {
@@ -241,7 +291,6 @@ button {
 .howto {
     display: flex;
     flex-direction: column;
-    padding: 20px;
     gap: 30px;
 }
 
@@ -291,7 +340,6 @@ button {
 /* SAMPLE */
 
 .tryout {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -326,6 +374,13 @@ button {
     display: none;
 }
 
+.tryout-howto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
 /* END */
 .end {
     display: flex;
@@ -351,6 +406,8 @@ button {
 footer {
     background-color: var(--red);
     padding: 20px;
+    position: relative;
+    margin-top: 8em;
 }
 
 footer li {
@@ -376,6 +433,14 @@ footer li {
 .listheader {
     font-weight: var(--semibold);
     font-size: 16px;
+}
+
+.footer__design {
+    position: absolute;
+    width: 100%;
+    height: 82px;
+    top: -50px;
+    left: 0;
 }
 
 /* BUTTONS */
@@ -411,4 +476,50 @@ footer li {
     background-color: var(--gray);
     display: flex;
     gap: 10px;
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+    .products__products {
+        flex-direction: row;
+    }
+
+    .tryout-howto {
+        flex-direction: row;
+    }
+
+    .footer__side {
+        flex-direction: row;
+        gap: 150px;
+        align-items: end;
+    }
+
+    .footer {
+        justify-content: center;
+        gap: 150px;
+    }
+
+    .bgdesign {
+        display: none;
+    }
+
+    .navdesktop {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container {
+        padding: 0 200px;
+    }
+
+    .products {
+        padding: 40px 100px;
+    }
 }

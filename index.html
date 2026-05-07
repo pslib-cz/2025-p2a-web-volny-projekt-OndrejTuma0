@@ -22,6 +22,12 @@
                     <div class="line"></div>
                 </div>
             </button>
+            <div class="navdesktop">
+                <a href="index.html">Hlavní stránka</a>
+                <a href="about/about.html">O nás</a>
+                <a href="contact/contact.html">Kontakty</a>
+                <a href="#products" class="button" style="padding: 5px 10px">Produkty</a>
+            </div>
         </div>
         <div class="navhamburger">
             <a href="index.html">Hlavní stránka</a>
@@ -31,7 +37,7 @@
         </div>
     </nav>
     
-    <section class="hero">
+    <section class="hero container">
         <div class="hero__header">
             <h1 class="header">Tvaruj svůj <span class="red">zvuk</span></h1>
             <p>Digitální a modulární syntezátory pro profesionály.</p>
@@ -42,90 +48,97 @@
         </div>
     </section>
 
-    <section class="products" id="products">
-        <a href="products/synth1.html" class="productcard">
-            <div class="productcard__info">
-                <div class="productcard__header">
-                    <p class="productcard__title">Modulab One</p>
-                    <p class="productcard__desc">Náš vlajkový semimodulární analogový syntezátor.</p>
+    <section class="products container" id="products">
+        <img src="img/waveDesign.png" alt="waveDesign" class="products__designtop">
+        <img src="img/waveDesign.png" alt="waveDesign" class="products__designbottom">
+        <h2 class="products__title">Syntezátory</h2>
+        <div class="products__products">
+            <a href="products/synth1.html" class="productcard">
+                <div class="productcard__info">
+                    <div class="productcard__header">
+                        <p class="productcard__title">Modulab One</p>
+                        <p class="productcard__desc">Náš vlajkový semimodulární analogový syntezátor.</p>
+                    </div>
+                    <p class="productcard__price">€499.99</p>
                 </div>
-                <p class="productcard__price">€499.99</p>
-            </div>
 
-            <img src="img/products/synth1.png" alt="synthImage">
-            <div class="tag">ŠPIČKOVÝ MODEL</div>
-        </a>
+                <img src="img/products/synth1.png" alt="synthImage">
+                <div class="tag">ŠPIČKOVÝ MODEL</div>
+            </a>
 
-        <a href="products/synth2.html" class="productcard">
-            <div class="productcard__info">
-                <div class="productcard__header">
-                    <p class="productcard__title">Modulab MK2</p>
-                    <p class="productcard__desc">Stejná analogová DNA jako One, za dostupnější cenu.</p>
+            <a href="products/synth2.html" class="productcard">
+                <div class="productcard__info">
+                    <div class="productcard__header">
+                        <p class="productcard__title">Modulab MK2</p>
+                        <p class="productcard__desc">Stejná analogová DNA jako One, za dostupnější cenu.</p>
+                    </div>
+                    <p class="productcard__price">€249.99</p>
                 </div>
-                <p class="productcard__price">€249.99</p>
-            </div>
 
-            <img src="img/products/synth2.png" alt="synthImage">
-            <div class="tag">BEST SELLER</div>
-        </a>
+                <img src="img/products/synth2.png" alt="synthImage">
+                <div class="tag">BEST SELLER</div>
+            </a>
 
-        <a href="products/synth3.html" class="productcard">
-            <div class="productcard__info">
-                <div class="productcard__header">
-                    <p class="productcard__title">Modulo</p>
-                    <p class="productcard__desc">Softwarový syntezátor který bere to nejlepší z wavetable a FM syntézy a dává ti to v jednom intuitivním rozhraní.</p>
+            <a href="products/synth3.html" class="productcard">
+                <div class="productcard__info">
+                    <div class="productcard__header">
+                        <p class="productcard__title">Modulo</p>
+                        <p class="productcard__desc">Softwarový syntezátor který bere to nejlepší z wavetable a FM syntézy a dává ti to v jednom intuitivním rozhraní.</p>
+                    </div>
+                    <p class="productcard__price">€99.99</p>
                 </div>
-                <p class="productcard__price">€99.99</p>
-            </div>
 
-            <img src="img/products/synth3.png" alt="synthImage">
-            <div class="tag">DIGITÁLNÍ</div>
-        </a>
-    </section>
-
-    <section class="howto">
-        <h2>Jak to funguje?</h2>
-        <div class="bullet">
-            <div class="bullet__content">
-                <p class="bullet__title red">Vyber si základ</p>
-                <p class="bullet__text">Začni s jedním z našich hotových modelů, nebo si sestav vlastní systém od nuly. Každý Modulab přístroj je navržen tak, aby fungoval sám i jako součást většího setupu.</p>
-            </div>
-        </div>
-        <div class="bullet-after">
-            <div class="bullet__content">
-                <p class="bullet__title red">Nakonfiguruj podle sebe</p>
-                <p class="bullet__text">Modulární architektura ti dává plnou kontrolu. Propoj oscilátory, filtry a efekty přesně tak, jak potřebuješ. Žádné limity, žádné kompromisy.</p>
-            </div>
-        </div>
-        <div class="bullet">
-            <div class="bullet__content">
-                <p class="bullet__title red">Hraj, tvoř, experimentuj</p>
-                <p class="bullet__text">Modulab přístroje jsou navrženy pro živé hraní i studiovou práci. Intuitivní ovládání ti umožní soustředit se na hudbu, ne na techniku.</p>
-            </div>
+                <img src="img/products/synth3.png" alt="synthImage">
+                <div class="tag">DIGITÁLNÍ</div>
+            </a>
         </div>
     </section>
 
-    <section class="tryout">
-        <h2>Zvukové ukázky</h2>
-        <p>Poslechni si, co Modulab umí — od jemných padů přes agresivní basy až po experimentální textury.</p>
-        <div class="sample">
-            <div class="sample__playback">
-                <button id="playBtn">
-                    <img src="img/main/play.svg" alt="play" class="icon-play">
-                    <img src="img/main/pause.svg" alt="pause" class="icon-pause">
-                </button>
-                <img src="img/main/waveform.svg" alt="waveform">
+    <section class="tryout-howto container">
+        <section class="howto">
+            <h2>Jak to funguje?</h2>
+            <div class="bullet">
+                <div class="bullet__content">
+                    <p class="bullet__title red">Vyber si základ</p>
+                    <p class="bullet__text">Začni s jedním z našich hotových modelů, nebo si sestav vlastní systém od nuly. Každý Modulab přístroj je navržen tak, aby fungoval sám i jako součást většího setupu.</p>
+                </div>
             </div>
-            <div class="sample__buttons">
-                <button class="button-dark selected">Bass</button>
-                <button class="button-dark">Pad</button>
-                <button class="button-dark">Lead</button>
-                <button class="button-dark">FX</button>
+            <div class="bullet-after">
+                <div class="bullet__content">
+                    <p class="bullet__title red">Nakonfiguruj podle sebe</p>
+                    <p class="bullet__text">Modulární architektura ti dává plnou kontrolu. Propoj oscilátory, filtry a efekty přesně tak, jak potřebuješ. Žádné limity, žádné kompromisy.</p>
+                </div>
             </div>
-        </div>
+            <div class="bullet">
+                <div class="bullet__content">
+                    <p class="bullet__title red">Hraj, tvoř, experimentuj</p>
+                    <p class="bullet__text">Modulab přístroje jsou navrženy pro živé hraní i studiovou práci. Intuitivní ovládání ti umožní soustředit se na hudbu, ne na techniku.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tryout">
+            <h2>Zvukové ukázky</h2>
+            <p>Poslechni si, co Modulab umí — od jemných padů přes agresivní basy až po experimentální textury.</p>
+            <div class="sample">
+                <div class="sample__playback">
+                    <button id="playBtn">
+                        <img src="img/main/play.svg" alt="play" class="icon-play">
+                        <img src="img/main/pause.svg" alt="pause" class="icon-pause">
+                    </button>
+                    <img src="img/main/waveform.svg" alt="waveform">
+                </div>
+                <div class="sample__buttons">
+                    <button class="button-dark selected">Bass</button>
+                    <button class="button-dark">Pad</button>
+                    <button class="button-dark">Lead</button>
+                    <button class="button-dark">FX</button>
+                </div>
+            </div>
+        </section>
     </section>
 
-    <section class="end">
+    <section class="end container">
         <div class="question">
             <p class="question__text">Už vís co si vybrat?</p>
             <a href="#" class="button">Prohlédnout syntezátory</a>
@@ -167,8 +180,11 @@
                     <li><a href="index.html"><img src="img/logoDark.png" alt="logoDark"></a></li>
                 </ul>
             </div>
+            <img src="img/waveDesign.png" alt="waveDesign" class="footer__design">
         </div>
     </footer>
+
+    <img src="../img/BGdesign.png" alt="BG" class="bgdesign">
 
     <script src="script.js"></script>
     <script src="main.js"></script>
